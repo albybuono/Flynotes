@@ -15,9 +15,14 @@ h1, h2, h3, h4, h5, p{color:#000000; padding-bottom: 30px;}
 .normal-text{font-size: 20px;}
 .small-text{font-size: 14px;}
 
+
 .intro-text{font-size: 20px; text-transform: uppercase; font-weight: bold;}
 
+
 .button{padding: 18px 28px; background: blueviolet; color: white; display: inline-block; border-radius: 20px;}
+
+
+
 
 @media (max-width: 768px){
 .big-text{font-size: 40px;}
@@ -25,7 +30,11 @@ h1, h2, h3, h4, h5, p{color:#000000; padding-bottom: 30px;}
 
 }
 
+
+
+
 /*! Header */
+
 
 .header{
     width: 100%;
@@ -37,42 +46,52 @@ h1, h2, h3, h4, h5, p{color:#000000; padding-bottom: 30px;}
     max-width: 2000px;
 }
 
+
 .header-dark {
     background-color: black; 
     transition: background-color 0.5s ease;
 }
 
+
 .logo{
 
 }
+
 
 .menu{
     width: 100%;
 
 }
 
+
 .menu li{
     display: inline-block;
 }
+
 
 .menu li a{
     color:white; padding: 15px; display: block;
 }
 
+
 .iconmenu{display: none;}
+
 
 .cta{}
 
 
 @media (max-width: 768px){
 
-
-    .logo{display: block; width: 50px; height: 50px; position: absolute; top: 20px; left: 20px;}
+    .header{display: flex; height: 90px; position: fixed;}
+    
+    .header-black{display: block; height: 400px; position: absolute;}
+    
+    .logo{display: block; width: 30px; height: 30px; position: absolute; top: 20px; left: 20px;}
+    
     .cta{display: none;}
 
 
     .menu{position: absolute; top: 0; right: -100%; background-color: black; height: 100vh; padding-top:80px;  right: -100%; transition: right 1s ease-in-out;}
-   
     .menu li{display: block;}
     .menu li a{padding: 15px 30px; font-size: 20px;}
 
@@ -160,6 +179,12 @@ align-items: center;
     width: 70%;
     margin: 0;
 }
+
+
+
+
+
+
 
 *,
 *:before,
