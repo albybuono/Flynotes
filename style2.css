@@ -1,0 +1,99 @@
+/*! Base Style */
+body {font-family: 'Anton', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto Mono', monospace; font-size: 16px;}
+
+a{text-decoration: none;}
+
+h1, h2, h3, h4, h5, p{color:#000000; padding-bottom: 30px;}
+
+.big-text{font-size: 70px; font-weight: 900;}
+.med-text{font-size: 40px;}
+.normal-text{font-size: 20px;}
+.small-text{font-size: 14px;}
+
+.intro-text{font-size: 20px; text-transform: uppercase; font-weight: bold;}
+
+.button{padding: 18px 28px; background: blueviolet; color: white; display: inline-block; border-radius: 20px;}
+
+@media (max-width: 768px){
+.big-text{font-size: 40px;}
+}
+
+/*! Header */
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    display: flex;
+    max-width: 20000;
+}
+
+
+.header-dark {
+    background-color: black; 
+    transition: background-color 0.5s ease;
+}
+
+.menu{
+    width: 100%;
+}
+
+.menu li{
+    display: inline-block;
+}
+
+.menu li a{
+    color:white; padding-right: 15px; display: block;
+}
+
+.iconmenu{display: none;}
+
+.cta {
+    position: fixed; /* Posiziona il pulsante in modo fisso rispetto alla finestra del browser */
+    right: 30px; /* Distanza dal bordo destro della finestra del browser */
+    z-index: 999; /* Assicura che il pulsante sia sopra gli altri elementi */
+}
+
+
+.hero {
+    height: 600px;
+    display: flex; 
+    width: 100%; 
+    align-items: center;
+    background: url("images/gif per header.gif") no-repeat center center;
+    background-size: cover;
+}
+
+
+.hero__content{
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.hero__content h1, p{
+    color: rgb(175, 213, 247);
+}
+
+
+#chat-box {
+    border: 1px solid #ffffff; /* Aggiungi un bordo nero */
+    height: 300px; /* Imposta l'altezza fissa del chat-box */
+    max-height: 300px; /* Imposta la dimensione massima del chat-box */
+    min-height: 300px; /* Imposta la dimensione minima del chat-box */
+    width: 70%; /* Imposta la larghezza fissa del chat-box */
+    overflow-y: auto; /* Abilita lo scorrimento verticale se necessario */
+    background-color: #000000;
+}
+
+
+#message-form {
+    margin-top: 20px; /* Aggiungi un margine superiore al form */
+    margin-bottom: 20px; /* Aggiungi un margine inferiore al form */
+}
+
